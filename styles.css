@@ -8,37 +8,80 @@ body {
   background: #bdc3c7;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
   background-repeat: no-repeat;
-  height: 100vh;
-  font-family: "Oxygen", sans-serif;
+  height: 120vh;
+  font-family: "Helvetica", sans-serif;
+  /*
   display: flex;
   flex-direction: column;
   align-items: center;
+  */
 }
 
 h1 {
   text-align: center;
   margin-top: 0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: lightgreen;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 button {
   height: 100px;
   width: 100px;
-  background-color: red;
+  background-color: purple;
   border-radius: 50%;
   outline: none;
-  border: 1px solid darkred;
+  border: 5px solid rgb(1, 125, 1);
+  box-shadow: 10px 10px 20px black;
   cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.8);
+  background-color: antiquewhite;
+}
+
+button:focus {
+  background-color: pink;
+  border-color: rgb(102, 191, 82);
+}
+
+button:hover {
+  background-color: rgb(233, 101, 209);
+  border-color: rgb(102, 191, 82);
 }
 
 .fun {
   /* CSS generated from https://uigradients.com */
-  background: #fc4a1a;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: hwb(330 31% 2%);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, hwb(330 31% 2%), hsl(42, 97%, 55%));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, hwb(330 31% 2%), hsl(42, 97%, 55%)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #idea {
+  font-size: 25px;
   text-align: center;
+}
+
+#cat-box {
+  width: 400px;
+  height: auto;
+  margin: 0 auto 20px auto;
+  box-shadow: 10px 10px 20px black;;
+}
+
+#cat-box:active {
+  transform: scale(0.8);
+}
+
+#cat-box img {
+  width: 100%;
+  height: auto;
 }
