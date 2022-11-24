@@ -1,4 +1,4 @@
-'use strict';
+import onChange from './node_modules/on-change';
 // https://www.boredapi.com/
 // https://docs.thecatapi.com/
 

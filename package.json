@@ -2,10 +2,14 @@
   "name": "intro-to-apisx--api-fetch",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "./script.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "on-change": "^4.0.2"
+  }
 }
